@@ -1,17 +1,24 @@
 <?php
 
-    $db = mysqli_connect('localhost','root','','shopping_cli');
+    require("./classes/index.php");
+    require("./src/index.php");
+    require("./helpers/index.php");
+    require("./shop.php");
 
-    $sql = "SELECT * FROM products";
-    $result = $db->query($sql);
-    $errors = array();
+    $cart = new Cart;
+    $products = new Products;
 
-    $result_length = mysqli_num_rows($result);
+    $product = new Product;
 
-    foreach($result as $row) {
+    $product->id = 1;
+    $product->name = "Test";
+    $product->price = 19.99;
+    $product->quantity = 2;
 
-        print_r($row);
+    array_push($products->items, $product);
 
-    }
+    print_r($products);
+
+    sqlTest();
 
 ?>

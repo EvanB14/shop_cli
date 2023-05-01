@@ -4,7 +4,19 @@
 
 ## Requirements
 
+### General
+
+- MySQL installed with CLI
+
+### C++
+
+### Javascript
+
+### PHP
+
 ## Installation
+
+### C++
 
 ### Javascript
 
