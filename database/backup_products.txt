@@ -1,0 +1,6 @@
+1,Rawlings Custom Glove,599.99,2
+2,Victus EB12,229.99,5
+3,Evoshield Batting Gloves,69.99,8
+4,Rawlings Helmet (RHB),59.99,4
+5,Champro L-Screen,269.99,1
+6,New Balance Cleats,99.99,9
