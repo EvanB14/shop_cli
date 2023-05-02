@@ -98,7 +98,7 @@ const loginMenu = async (db, products, users, cart) => {
         q = "[ Username ]: ";
         selection = await userInput(q);
         
-        let [ index, sql_id ] = await users.verifyUser(db, selection, 2);
+        let [ index, sql_id ] = await users.verifyUser(db, selection);
 
         if (index > -1 && sql_id > -1) {
 

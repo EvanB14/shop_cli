@@ -14,6 +14,7 @@ using namespace std;
 int main(void) {
 
     try {
+        
         sql::Driver *driver;
         sql::Connection *con;
         sql::Statement *stmt;

@@ -81,12 +81,11 @@ class Users {
 
     }
 
-    verifyUser = async (db, user, type) => {
+    verifyUser = async (db, user) => {
 
         let index = -1, sql_id = -1;
 
-        if (type === 1) {}
-        else if (type === 2) for (let i = 0; i < this.items.length; i++) if (user === this.items[i].name) index = i;
+        for (let i = 0; i < this.items.length; i++) if (user === this.items[i].name) index = i;
 
         if (index !== -1) {
 

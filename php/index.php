@@ -7,18 +7,8 @@
 
     $cart = new Cart;
     $products = new Products;
+    $users = new Users;
 
-    $product = new Product;
-
-    $product->id = 1;
-    $product->name = "Test";
-    $product->price = 19.99;
-    $product->quantity = 2;
-
-    array_push($products->items, $product);
-
-    print_r($products);
-
-    sqlTest();
+    loadMenu($products, $users, $cart);
 
 ?>
